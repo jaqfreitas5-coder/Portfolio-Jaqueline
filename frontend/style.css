@@ -1,0 +1,159 @@
+﻿/* Em frontend/style.css */
+
+/* =========================================================
+=== PAINEL DE CONTROLE DE CORES DO SITE (TEMA DARK TECH) ===
+============================================================
+Para mudar o tema, altere os códigos de cor abaixo.
+Use um seletor de cores online como 'Google Color Picker' para encontrar novas cores.
+*/
+:root {
+  /* Cores Principais */
+  --cor-primaria-azul: #00bfff;     /* Azul elétrico para headers, links e destaques */
+  --cor-secundaria-verde: #00ff7f; /* Verde "hacker" para detalhes e o fundo binário */
+  
+  /* Cores de Fundo */
+  --cor-fundo-principal: #0d1117;   /* Fundo geral da página (preto azulado) */
+  --cor-caixas: #161b22;           /* Fundo das seções e cards (um pouco mais claro) */
+
+  /* Cores de Texto */
+  --cor-titulos: #c9d1d9;           /* Cinza claro para os títulos das seções */
+  --cor-texto-geral: #8b949e;       /* Cinza médio para textos comuns, mais suave aos olhos */
+  --cor-texto-forte: #e6edf3;       /* Branco suave para textos importantes nos cards */
+
+  /* Cores de Bordas e Sombras */
+  --cor-borda: #30363d;            /* Borda para os cards */
+  --cor-sombra-glow: rgba(0, 191, 255, 0.1); /* Sombra azul sutil para efeito "glow" */
+}
+
+/* Animação para o fundo binário */
+@keyframes scrollBinary {
+  from { background-position: 0 0; }
+  to { background-position: 0 -200px; }
+}
+
+/* Estilos gerais */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-geral);
+  margin: 0;
+  
+  /* === O FUNDO TECNOLÓGICO === */
+  /* Ele usa uma imagem SVG de números binários que se repete e se move lentamente */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Ctext x='50%25' y='50%25' font-family='monospace' font-size='14' fill-opacity='0.1' fill='%2300ff7f' text-anchor='middle' dominant-baseline='middle'%3E01101001 10010110 00101101 10100011 01011100 11001010%3C/text%3E%3C/svg%3E");
+  animation: scrollBinary 20s linear infinite;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabeçalho principal com informações do perfil */
+.profile-header {
+  background-color: transparent; /* Fica transparente para ver o fundo */
+  color: var(--cor-texto-forte);
+  padding: 40px 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--cor-primaria-azul); /* Título principal em azul */
+}
+
+.profile-header p {
+  margin: 10px 0 20px;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--cor-titulos);
+}
+
+.contact-links a {
+  color: var(--cor-texto-forte);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--cor-primaria-azul);
+}
+
+/* Estilos das Seções */
+section {
+  background-color: var(--cor-caixas);
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: var(--cor-titulos);
+  border-bottom: 2px solid var(--cor-primaria-azul);
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Layouts de Grid e Lista */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--cor-fundo-principal); /* Cards um pouco mais escuros que as seções */
+  border: 1px solid var(--cor-borda);
+  padding: 20px;
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--cor-sombra-glow);
+  border-color: var(--cor-primaria-azul);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--cor-texto-forte);
+}
+
+.card a {
+  color: var(--cor-primaria-azul);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilo específico para itens de lista (Experiência, Formação) */
+.list-item {
+  border-left: 4px solid var(--cor-primaria-azul);
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.list-item h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: var(--cor-texto-forte);
+}
+
+.item-meta {
+  font-weight: bold;
+  color: var(--cor-titulos);
+  margin-bottom: 10px;
+}
