@@ -6,7 +6,7 @@
 
 </div>
 
-Este projeto é a materialização do meu portfólio profissional, desenvolvido com uma arquitetura moderna e desacoplada. Em vez de um site estático, construí uma **API RESTful robusta em .NET** que serve dinamicamente todas as minhas informações de carreira — de experiências e habilidades a projetos — a partir de um banco de dados **SQL Server**. O frontend, desenvolvido com **JavaScript puro**, consome essa API para criar uma experiência de usuário fluida e sempre atualizada.
+Este projeto é a materialização do meu portfólio profissional, desenvolvido com uma arquitetura moderna e desacoplada. Em vez de um site estático, construi uma **API RESTful robusta em .NET** que serve dinamicamente todas as minhas informações de carreira — de experiências e habilidades a projetos — a partir de um banco de dados **SQL Server**. O frontend, desenvolvido com **JavaScript puro**, consome essa API para criar uma experiência de usuário fluida e sempre atualizada.
 
 ---
 
@@ -17,11 +17,6 @@ Este projeto é a materialização do meu portfólio profissional, desenvolvido 
 * **Frontend Dinâmico:** Interface reativa construída com JavaScript puro (Vanilla JS), que renderiza os dados recebidos da API, garantindo que o conteúdo esteja sempre sincronizado com o banco de dados.
 * **Integração com APIs Externas:** Conexão em tempo real com a API oficial do GitHub para buscar e exibir meus repositórios públicos mais recentes.
 * **Design Responsivo e Moderno:** Interface com tema *Dark Tech*, pensada para uma excelente experiência em qualquer dispositivo.
-
-## 📸 Preview do Projeto
-
-![Preview do Projeto](https://i.imgur.com/5d5a5b.png) 
-*Visualização da interface do portfólio, exibindo as seções de habilidades e experiência profissional.*
 
 ---
 
