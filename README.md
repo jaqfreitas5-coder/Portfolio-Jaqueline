@@ -6,7 +6,7 @@
 
 </div>
 
-Este projeto é a materialização do meu portfólio profissional, desenvolvido com uma arquitetura moderna e desacoplada. Em vez de um site estático, construi uma **API RESTful robusta em .NET** que serve dinamicamente todas as minhas informações de carreira de experiências e habilidades a projetos — a partir de um banco de dados **SQL Server**. O frontend, desenvolvido com **JavaScript puro**, consome essa API para criar uma experiência de usuário fluida e sempre atualizada.
+Este projeto é a materialização do meu portfólio profissional, desenvolvido com uma arquitetura moderna e desacoplada. Em vez de um site estático, construi uma **API RESTful robusta em .NET** que serve dinamicamente todas as minhas informações de carreira de experiências e habilidades a projetos  a partir de um banco de dados **SQL Server**. O frontend, desenvolvido com **JavaScript puro**, consome essa API para criar uma experiência de usuário fluida e sempre atualizada.
 
 ---
 
